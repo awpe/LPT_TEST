@@ -1,0 +1,47 @@
+ParallelPort
+============
+
+Parallel port control library for Linux.
+
+By Yi Yao (http://yyao.ca/)
+
+
+License
+-------
+The ParallelPort library uses the zlib license.
+
+Copyright (C) 2000-2009 Yi Yao
+
+This software is provided 'as-is', without any express or implied warranty. In
+no event will the authors be held liable for any damages arising from the use of
+this software.
+
+Permission is granted to anyone to use this software for any purpose, including
+commercial applications, and to alter it and redistribute it freely, subject to
+the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not claim
+   that you wrote the original software. If you use this software in a product,
+   an acknowledgment in the product documentation would be appreciated but is
+   not required.
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
+
+
+Description
+-----------
+The ParallelPort library can be used to access the registers and pins of your
+parallel port. This is all done with user space ioctl calls. A test program is
+available with which you can toggle and read all the pins of your parallel port.
+You must have the OpenGL an GLUT (or compatible) libraries to compile the test
+program.
+
+
+Directory structure
+-------------------
+ParallelPort.cpp, ParallelPort.h - Parallel port library
+main.cpp, main.h - Test program written in GLUT and OpenGL
+Makefile - Makefile which makes the test program
+ParallelPort.cbp - Code::Blocks project file
+docs/ - Doxygen files used to generate HTML documentation
